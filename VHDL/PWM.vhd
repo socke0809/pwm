@@ -59,7 +59,7 @@ signal a, d: integer range 0 to 10000:= 0;
 
 begin
 
-fade_value <= (0, 30103, 47712, 60206, 69897, 77815, 84510, 90309, 95424, 100000);
+fade_value <= (0, 3010, 4771, 6020, 6989, 7781, 8451, 9030, 9542, 10000);
 process (CLK)
 begin
 		if rising_edge(CLK) then
@@ -90,7 +90,7 @@ begin
 		
 	end if;
 end process;
-		
+
 process(clk)		
 	begin 
 	if rising_edge(clk) then
@@ -121,7 +121,7 @@ process(clk)
 			a<= 0;
 		else
 			
-			if  a < 100000 then  --SW(2) = '1' and 
+			if  a < 10000 then  --SW(2) = '1' and 
 				a <= a+1;
 				if a < temp then
 					LD(2) <= '1';
